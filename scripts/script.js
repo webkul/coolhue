@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         chGradient.style.backgroundImage = tempImage;
         chGradient.dataset = {};
-        chColorFrom.style.color = chColorFrom.innerText = chGradient.dataset.colorFrom = colorFrom;
+        chColorFrom.innerText = chGradient.dataset.colorFrom = colorFrom;
         chColorTo.style.color = chColorTo.innerText = chGradient.dataset.colorTo = colorTo;
         chCode.onclick = copyHandler;
         chGrab.onclick = grabHandler;
