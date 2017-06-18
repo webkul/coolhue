@@ -247,3 +247,10 @@ p.ch-copyright {
     display: block;
     text-align: center;
 }
+
+@media screen and (min-width:320px) and (max-width:1024px) {
+    .ch-gradient-brick .ch-actions {
+        display: block;
+        animation: micro-move .3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+}
