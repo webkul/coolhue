@@ -1,0 +1,249 @@
+/*coolHue Stylesheet */
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: #7C70F4;
+    color: #FFFFFF;
+}
+
+body {
+    margin: 50px;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1.ch-logo {
+    font-size: 0;
+    width: 139px;
+    height: 47px;
+    margin: 0 auto;
+    background-image: url("../images/coolhue-logo.svg");
+}
+
+p {
+    text-align: center;
+    font-size: 17px;
+    color: #929197;
+    padding: 15px 25px;
+}
+
+p.ch-tagline {
+    width: 400px;
+    max-width: 100%;
+    margin: 15px auto 0px auto;
+}
+
+.ch-emoji {
+    font-size: 24px;
+    vertical-align: middle;
+}
+
+.ch-bit-social {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0px 20px 0px;
+}
+
+.ch-social-channel {
+    margin: 5px;
+    display: inline-block;
+}
+
+p.ch-credits,
+p.ch-copyright {
+    font-size: 15px;
+    padding: 0px;
+    margin: 10px 0px 30px 0px;
+}
+
+.ch-uvdesk {
+    color: #7C70F4;
+    text-decoration: none;
+}
+
+.ch-uvdesk:hover {
+    text-decoration: underline;
+}
+
+.ch-separator {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #9FACBD;
+    position: relative;
+    display: block;
+    margin: 0px auto 20px auto;
+}
+
+.ch-separator-bottom {
+    margin: 30px auto;
+}
+
+.ch-separator:before {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #9FACBD;
+    position: absolute;
+    left: -7px;
+    content: "";
+}
+
+.ch-separator:after {
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    background-color: #9FACBD;
+    position: absolute;
+    right: -7px;
+    content: "";
+}
+
+.ch-paper {
+    max-width: 1500px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.ch-gradient-brick {
+    width: 170px;
+    display: inline-block;
+    border-radius: 12px;
+    margin: 25px;
+    box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
+    transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    transform: translateY(0px);
+}
+
+.ch-gradient-brick:hover {
+    box-shadow: 0px 0px 114px 0px rgba(0, 0, 0, 0.08), 0px 30px 25px 0px rgba(0, 0, 0, 0.05);
+    transform: translateY(-5px);
+}
+
+.ch-gradient {
+    border-radius: 12px 12px 0px 0px;
+    width: 100%;
+    height: 160px;
+    position: relative;
+    background-color: #CFD8DC;
+}
+
+.ch-actions {
+    display: none;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+.ch-gradient-brick:hover .ch-actions {
+    display: block;
+    animation: micro-move .3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.ch-code,
+.ch-grab {
+    width: 26px;
+    height: 26px;
+    display: inline-block;
+    background-position: center center;
+    background: no-repeat;
+    cursor: pointer;
+    vertical-align: middle;
+    margin: 3px;
+    transform: translateY(0px);
+    transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    opacity: .7;
+}
+
+@keyframes micro-move {
+    from {
+        transform: translateY(5px);
+    }
+    to {
+        transform: translateY(0px);
+    }
+}
+
+.ch-code:hover,
+.ch-grab:hover {
+    opacity: 1;
+    transform: translateY(-4px);
+}
+
+.ch-code:active,
+.ch-grab:active {
+    opacity: 1;
+    transform: translateY(-2px);
+}
+
+.ch-code {
+    background-image: url("../images/icon-code.svg");
+}
+
+.ch-grab {
+    background-image: url("../images/icon-grab.svg");
+}
+
+.ch-colors {
+    border-radius: 0px 0px 12px 12px;
+    padding: 12px;
+    text-align: left;
+}
+
+.ch-color-from {
+    margin-bottom: 3px;
+}
+
+.ch-color-from,
+.ch-color-to {
+    color: #929197;
+    display: block;
+    padding: 0px;
+}
+
+.ch-notify-plank {
+    position: fixed;
+    width: 250px;
+    max-width: 80%;
+    top: 35px;
+    right: 0px;
+    z-index: 500;
+    text-align: right;
+    max-height: 70%;
+    overflow-y: auto;
+}
+
+.ch-notify {
+    margin: 0px 35px 10px 0px;
+    background-color: #333333;
+    box-shadow: 0px 4px 15.36px 0.64px rgba(0, 0, 0, 0.1), 0px 2px 6px 0px rgba(0, 0, 0, 0.12);
+    border-radius: 5px;
+    padding: 10px 20px;
+    color: #FFFFFF;
+    display: inline-block;
+}
+
+.ch-notify-animate {
+    animation: notify-up .2s cubic-bezier(0.4, 0, 0.2, 1);
+    ;
+}
+
+@keyframes notify-up {
+    0% {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.ch-notify span {
+    display: block;
+    text-align: center;
+}
