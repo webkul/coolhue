@@ -1,0 +1,26 @@
+{
+  "name": "coolhue",
+  "homepage": "https://webkul.github.io/coolhue/",
+  "authors": [
+    "Nitish Kumar <support@webkul.com>"
+  ],
+  "description": "Coolest handpicked Gradient Hues for your next super  ��� amazing stuff",
+  "main": "scripts/script.js",
+  "keywords": [
+    "coolhue",
+    "swatch",
+    "palette",
+    "color-swatch",
+    "color-palette",
+    "gradient-swatch",
+    "gradient-palette"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
