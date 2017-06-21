@@ -192,6 +192,7 @@ p.ch-copyright {
     border-radius: 0px 0px 12px 12px;
     padding: 12px;
     text-align: left;
+    text-transform: uppercase;
 }
 
 .ch-color-from {
