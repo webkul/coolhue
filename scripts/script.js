@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         var nodeColorToText = document.createTextNode(tempColorTo);
 
-        // Append to Body
+        //Append to Paper
         nodeGradientBrick.appendChild(nodeGradient);
         nodeActions.appendChild(nodeCode);
         nodeActions.appendChild(nodeGrab);
@@ -61,12 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
         nodeColorTo.appendChild(nodeColorToText);
         nodeGradientBrick.appendChild(nodeColors);
         chPaper.appendChild(nodeGradientBrick);
-
     }
-
-
-
-
 
     window.onclick = function (event) {
         //Copy Code
@@ -112,6 +107,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 notifyPlank.removeChild(notify);
             }, 5000);
         }
+        
         //Grab Palette
         if (event.target.matches(".ch-grab")) {
             var eventColorFrom = event.target.dataset.colorFrom;
