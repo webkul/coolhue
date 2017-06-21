@@ -1,7 +1,8 @@
 // coolHue Script
-
 document.addEventListener("DOMContentLoaded", function () {
+
     //Globals
+    var chPaper = document.querySelector(".ch-paper");
     var chColorFrom = document.querySelectorAll(".ch-color-from");
     var chColorTo = document.querySelectorAll(".ch-color-to");
     var chGradient = document.querySelectorAll(".ch-gradient");
@@ -13,17 +14,58 @@ document.addEventListener("DOMContentLoaded", function () {
     var gradientStart = " 0%, ";
     var gradientEnd = " 100%)";
 
-    for (var i = 0; i < chGradient.length; i++) {
-        tempColorFrom = chColorFrom[i].innerText;
-        tempColorTo = chColorTo[i].innerText;
+
+    for (var i = 0; i < colorData.length; i++) {
+        tempColorFrom = colorData[i][0];
+        tempColorTo = colorData[i][1];
         var tempImage = gradientType + tempColorFrom + gradientStart + tempColorTo + gradientEnd;
-        chGradient[i].style.backgroundImage = tempImage;
-        chColorTo[i].style.color = tempColorTo;
-        chCode[i].dataset.colorFrom = tempColorFrom;
-        chCode[i].dataset.colorTo = tempColorTo;
-        chGrab[i].dataset.colorFrom = tempColorFrom;
-        chGrab[i].dataset.colorTo = tempColorTo;
+
+        var nodeGradientBrick = document.createElement("div");
+        nodeGradientBrick.classList.add("ch-gradient-brick");
+        var nodeGradient = document.createElement("div");
+        nodeGradient.classList.add("ch-gradient");
+        nodeGradient.style.backgroundImage = tempImage;
+        var nodeActions = document.createElement("div");
+        nodeActions.classList.add("ch-actions");
+        var nodeCode = document.createElement("span");
+        nodeCode.classList.add("ch-code");
+        nodeCode.dataset.colorFrom = tempColorFrom;
+        nodeCode.dataset.colorTo = tempColorTo;
+
+        var nodeGrab = document.createElement("span");
+        nodeGrab.classList.add("ch-grab");
+        nodeGrab.dataset.colorFrom = tempColorFrom;
+        nodeGrab.dataset.colorTo = tempColorTo;
+
+        var nodeColors = document.createElement("div");
+        nodeColors.classList.add("ch-colors");
+
+        var nodeColorFrom = document.createElement("span");
+        nodeColorFrom.classList.add("ch-color-from");
+        var nodeColorFromText = document.createTextNode(tempColorFrom);
+
+        var nodeColorTo = document.createElement("span");
+        nodeColorTo.classList.add("ch-color-to");
+        nodeColorTo.style.color = tempColorTo;
+
+        var nodeColorToText = document.createTextNode(tempColorTo);
+
+        // Append to Body
+        nodeGradientBrick.appendChild(nodeGradient);
+        nodeActions.appendChild(nodeCode);
+        nodeActions.appendChild(nodeGrab);
+        nodeGradient.appendChild(nodeActions);
+        nodeColors.appendChild(nodeColorFrom);
+        nodeColorFrom.appendChild(nodeColorFromText);
+        nodeColors.appendChild(nodeColorTo);
+        nodeColorTo.appendChild(nodeColorToText);
+        nodeGradientBrick.appendChild(nodeColors);
+        chPaper.appendChild(nodeGradientBrick);
+
     }
+
+
+
 
 
     window.onclick = function (event) {
