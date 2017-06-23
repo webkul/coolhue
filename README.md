@@ -9,7 +9,7 @@ coolHue gradients palette is **rendered by JavaScript Object** which makes it ve
 
 # Installation
 You can create your very own personalized collection of Gradient Palette with coolHue - 
-1. Download the latest [coolHue v1.2.0 release archive](http://bit.ly/coolhue_v_1_2_0) from the repository's release section.
+1. Download the latest [coolHue v1.2.0 release archive](http://bit.ly/coolhue-v121) from the repository's release section.
 2. Unpack the archive and drag `index.html` in the browser, to check out the default gradient palette.
 3. All the gradients which are visible in the browser by default are rendered by `colorData` Javascript Object.
 4. You just need to update the `colorData` Object (array) to create your very own gradient palette. So, Open `index.html` in the text editor and update the color codes.
