@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Sketch_logo_frame" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+	 y="0px" width="24px" height="21.7px" viewBox="0 0 24 21.7" style="enable-background:new 0 0 24 21.7;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFAE00;}
+	.st1{fill:#EC6C00;}
+	.st2{fill:#FFEFB4;}
+	.st3{fill:#FED305;}
+</style>
+<g id="Sketch-Flat-Logo">
+	<g id="Group">
+		<g id="Base">
+			<path id="Polygon" class="st0" d="M12,21.7L0,7.8l5.2-7L12,0l6.8,0.7l5.2,7L12,21.7z"/>
+		</g>
+		<g id="Bottom-Back" transform="translate(0 7.773)">
+			<path id="Polygon-2" class="st1" d="M12,13.9L0,0h24L12,13.9z"/>
+		</g>
+		<g id="Bottom-Mid" transform="translate(4.858 7.773)">
+			<path id="Polygon-3" class="st0" d="M7.1,13.9L0,0h14.3L7.1,13.9z"/>
+		</g>
+		<g id="Top-Mid" transform="translate(4.858)">
+			<path id="Polygon-4" class="st2" d="M7.1,0L0,7.8h14.3L7.1,0z"/>
+		</g>
+		<g id="Top-Side-Left" transform="translate(0 0.729)">
+			<path id="Polygon-5" class="st0" d="M5.2,0L2.5,3.5L0,7h4.9L5.2,0z"/>
+		</g>
+		<g id="Top-Side-Right" transform="translate(18.802 0.729)">
+			<path id="Polygon-6" class="st0" d="M0,0l2.7,3.5L5.2,7H0.3L0,0z"/>
+		</g>
+		<g id="Top-Left" transform="translate(4.858)">
+			<path id="Polygon-7" class="st3" d="M0.3,0.7L0,7.8L7.1,0L0.3,0.7z"/>
+		</g>
+		<g id="Top-Right" transform="translate(12)">
+			<path id="Polygon-8" class="st3" d="M6.8,0.7l0.3,7L0,0L6.8,0.7z"/>
+		</g>
+	</g>
+</g>
+</svg>
