@@ -9,7 +9,7 @@ coolHue gradients palette is **rendered by JavaScript Object** which makes it ve
 
 # Installation
 You can create your very own personalized collection of Gradient Palette with coolHue - 
-1. Download the latest [coolHue v1.2.1 release archive](http://bit.ly/coolhue-v121) from the repository's release section.
+1. Download the latest [coolHue release archive](http://bit.ly/coolhue-releases) from the repository's release section.
 2. Unpack the archive and drag `index.html` in the browser, to check out the default gradient palette.
 3. All the gradients which are visible in the browser by default are rendered by `colorData` Javascript Object.
 4. You just need to update the `colorData` Object (array) to create your very own gradient palette. So, Open `index.html` in the text editor and update the color codes.
@@ -27,10 +27,10 @@ You can grab the complete dev build using the **`bower`** package manager via fo
 :heavy_exclamation_mark: Installation command mentioned above needs bower to be pre installed on your local machine.
 
 ## Photoshop Gradient Palette
-You can download the [coolHue Gradient Palette for Photoshop](https://github.com/webkul/coolhue/blob/master/distro/ps_coolHue.grd).
+You can download the [coolHue Gradient Palette for Photoshop](http://bit.ly/coolhue-ps).
 
 ## Sketch App Gradient Palette
-You can download the [coolHue Gradient Palette for Sketch App](https://github.com/webkul/coolhue/blob/master/distro/coolHue.sketch).
+You can download the [coolHue Gradient Palette for Sketch App](http://bit.ly/coolhue-sketch).
 
 # Credits
 Crafted with :heart: by [UVdesk App](https://www.uvdesk.com/)
