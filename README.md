@@ -1,7 +1,7 @@
 
 [![coolHue](https://webkul.com/blog/wp-content/uploads/2017/06/coolhue-logo.png)](https://webkul.github.io/coolhue/)   
 # coolHue
-Coolest handpicked Gradient Hues and Swatches for your next super ⚡ amazing stuff. coolHue has 30 coolest Gradients and :seedling: the list is still growing. You can also personalize the coolHue Palette as per as your taste.
+Coolest handpicked Gradient Hues and Swatches for your next super ⚡ amazing stuff. coolHue has 60 coolest Gradients and :seedling: the list is still growing. You can also personalize the coolHue Palette as per as your taste.
  
 [![coolHue](https://webkul.com/blog/wp-content/uploads/2017/06/coolhue-card.png)](https://webkul.github.io/coolhue/)
  
