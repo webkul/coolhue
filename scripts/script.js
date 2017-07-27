@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var notifyPlank = document.querySelector(".ch-notify-plank");
     var backgroundImage = "background-image: ";
     var gradientType = "linear-gradient( 135deg, ";
-    var gradientStart = " 0%, ";
+    var gradientStart = " 10%, ";
     var gradientEnd = " 100%)";
 
 
