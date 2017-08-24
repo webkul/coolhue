@@ -27,12 +27,12 @@ document.addEventListener("DOMContentLoaded", function () {
         nodeGradient.style.backgroundImage = tempImage;
         var nodeActions = document.createElement("div");
         nodeActions.classList.add("ch-actions");
-        var nodeCode = document.createElement("span");
+        var nodeCode = document.createElement("a");
         nodeCode.classList.add("ch-code");
         nodeCode.dataset.colorFrom = tempColorFrom;
         nodeCode.dataset.colorTo = tempColorTo;
 
-        var nodeGrab = document.createElement("span");
+        var nodeGrab = document.createElement("a");
         nodeGrab.classList.add("ch-grab");
         nodeGrab.dataset.colorFrom = tempColorFrom;
         nodeGrab.dataset.colorTo = tempColorTo;
@@ -121,7 +121,10 @@ document.addEventListener("DOMContentLoaded", function () {
             tempGradient.addColorStop(1, eventColorTo);
             ctx.fillStyle = tempGradient;
             ctx.fillRect(0, 0, 500, 500);
-            window.open(canvas.toDataURL());
+            var dataURL = canvas.toDataURL();
+            event.target.href = dataURL;
+            var fileName = "coolHue-" + eventColorFrom.slice(1, 7) + "-" + eventColorTo.slice(1, 7);
+            event.target.setAttribute("download", fileName);
         }
     }
 
