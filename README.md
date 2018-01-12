@@ -26,6 +26,12 @@ You can grab the complete dev build using the **`bower`** package manager via fo
  
 :heavy_exclamation_mark: Installation command mentioned above needs bower to be pre installed on your local machine.
 
+## npm package
+coolHue is also available as node module. You can read [How it works](https://www.npmjs.com/package/coolhue) with `npm` to get started. If you are already familiar; Installation command is mentioned just below -  
+   
+`npm install --save-dev coolhue`
+   
+
 ## Photoshop Gradient Palette
 You can download the [coolHue Gradient Palette for Photoshop](http://bit.ly/coolhue-ps).
 
