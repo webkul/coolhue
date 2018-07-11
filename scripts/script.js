@@ -173,7 +173,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     var starRequest = new XMLHttpRequest();
-    // starRequest.open("GET", "https://api.github.com/repos/webkul/coolhue", true);
+    starRequest.open("GET", "https://api.github.com/repos/webkul/coolhue", true);
     starRequest.send();
     var starPromise = new Promise(function(resolve, reject){
         starRequest.onreadystatechange =  function(){
