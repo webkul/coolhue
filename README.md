@@ -1,4 +1,4 @@
-[![coolHue](https://webkul.github.io/coolhue/images/coolhue-cover.png)](https://webkul.github.io/coolhue/)
+[![coolHue](https://webkul.github.io/coolhue/images/coolhue-cover.png?1.0.1)](https://webkul.github.io/coolhue/)
 # coolHue
 Coolest handpicked Gradient Hues and Swatches for your next super ⚡ amazing stuff. coolHue has 60 coolest Gradients. You can also personalize the coolHue Palette as per as your taste.
  
