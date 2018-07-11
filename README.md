@@ -8,7 +8,7 @@ CoolHue gradients palette is **rendered by JSON** which makes it very easy to ma
 You can create your very own personalized collection of Gradient Palette with CoolHue - 
 You should have [`bower`](https://bower.io/#install-bower) package manager installed on your machine to proceed further.
 1. Open terminal and install CoolHue with `bower install coolhue`.
-2. Go to `coolhue` directory with `cd coolhue` command and run `npm install`.
+2. Go to `coolhue` directory with `cd bower_components/coolhue` command and run `npm install`.
 3. Once, all the node modules are installed successfully, run `npm run coolhue`.
 4. All the gradients which appears in the browser are rendered from `scripts/coolhue.json` file.
 5. You just need to update the `coolhue.json` Object (array) to create your very own gradient palette. Open `scripts/coolhue.json` in the text editor and add or update the hex codes to generate the gradient palettes.
