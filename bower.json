@@ -1,6 +1,6 @@
 {
   "name": "coolhue",
-  "version": "1.4.1",
+  "version": "2.0.0",
   "homepage": "https://webkul.github.io/coolhue/",
   "authors": [
     "Nitish Kumar <support@webkul.com>"
@@ -11,10 +11,10 @@
     "coolhue",
     "swatch",
     "palette",
-    "color-swatch",
-    "color-palette",
-    "gradient-swatch",
-    "gradient-palette"
+    "color swatch",
+    "color palette",
+    "gradient swatch",
+    "gradient palette"
   ],
   "license": "MIT",
   "ignore": [

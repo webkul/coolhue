@@ -1,33 +1,22 @@
-
-[![coolHue](https://webkul.com/blog/wp-content/uploads/2017/06/coolhue-logo.png)](https://webkul.github.io/coolhue/)   
+[![coolHue](https://webkul.github.io/coolhue/images/coolhue-cover.png)](https://webkul.github.io/coolhue/)
 # coolHue
-Coolest handpicked Gradient Hues and Swatches for your next super ⚡ amazing stuff. coolHue has 60 coolest Gradients and :seedling: the list is still growing. You can also personalize the coolHue Palette as per as your taste.
+Coolest handpicked Gradient Hues and Swatches for your next super ⚡ amazing stuff. coolHue has 60 coolest Gradients. You can also personalize the coolHue Palette as per as your taste.
  
-[![coolHue](https://webkul.com/blog/wp-content/uploads/2017/06/coolhue-card.png)](https://webkul.github.io/coolhue/)
- 
-coolHue gradients palette is **rendered by JavaScript Object** which makes it very easy to make a subtle update anytime.
+CoolHue gradients palette is **rendered by JSON** which makes it very easy to make a subtle update anytime.
 
 # Installation
-You can create your very own personalized collection of Gradient Palette with coolHue - 
-1. Download the latest [coolHue release archive](http://bit.ly/coolhue-releases) from the repository's release section.
-2. Unpack the archive and drag `index.html` in the browser, to check out the default gradient palette.
-3. All the gradients which are visible in the browser by default are rendered by `colorData` Javascript Object.
-4. You just need to update the `colorData` Object (array) to create your very own gradient palette. So, Open `index.html` in the text editor and update the color codes.
+You can create your very own personalized collection of Gradient Palette with CoolHue - 
+You should have [`bower`](https://bower.io/#install-bower) package manager installed on your machine to proceed further.
+1. Open terminal and install CoolHue with `bower install coolhue`.
+2. Go to `coolhue` directory with `cd coolhue` command and run `npm install`.
+3. Once, all the node modules are installed successfully, run `npm run coolhue`.
+4. All the gradients which appears in the browser are rendered from `scripts/coolhue.json` file.
+5. You just need to update the `coolhue.json` Object (array) to create your very own gradient palette. Open `scripts/coolhue.json` in the text editor and add or update the hex codes to generate the gradient palettes.
  
-[![cooHue JS Object](https://webkul.com/blog/wp-content/uploads/2017/06/coolhue-data-object.png)](https://github.com/webkul/coolhue/blob/master/index.html)
- 
-5. Voila! :clap: drag the `index.html` into the browser and you are done!
+[![cooHue JS Object](https://webkul.github.io/coolhue/images/coolhue-json.png.png)](https://github.com/webkul/coolhue/blob/master/scripts/coolhue.json)
 
----**else**--- 
-
-You can grab the complete dev build using the **`bower`** package manager via following installation command
- 
-`bower install coolhue`
- 
-:heavy_exclamation_mark: Installation command mentioned above needs bower to be pre installed on your local machine.
-
-## npm package
-coolHue is also available as node module. You can read [How it works](https://www.npmjs.com/package/coolhue) with `npm` to get started. If you are already familiar; Installation command is mentioned just below -  
+## Including CoolHue in `npm` Workflow
+CoolHue is also available as a node module. You can read [How it works](https://www.npmjs.com/package/coolhue) with `npm` to get started. If you are already familiar; Installation command is mentioned just below -  
    
 `npm install --save-dev coolhue`
    
@@ -39,4 +28,4 @@ You can download the [coolHue Gradient Palette for Photoshop](http://bit.ly/cool
 You can download the [coolHue Gradient Palette for Sketch App](http://bit.ly/coolhue-sketch).
 
 # Credits
-Crafted with :heart: by [UVdesk App](https://www.uvdesk.com/)
+© Copyright [Webkul Software](https://webkul.com/), All rights reserved.

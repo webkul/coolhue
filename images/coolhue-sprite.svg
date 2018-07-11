@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="100px" height="103px" viewBox="0 0 100 103" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>coolhue-sprite</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="24.3016667%" y1="-5.2220339%" x2="62.635%" y2="77.1508475%" id="linearGradient-1">
+            <stop stop-color="#A0CBFF" offset="0%"></stop>
+            <stop stop-color="#A0CBFE" offset="39.41%"></stop>
+            <stop stop-color="#8EC2FC" offset="58.3%"></stop>
+            <stop stop-color="#83BCFB" offset="78.38%"></stop>
+            <stop stop-color="#7FBAFB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="35.6341584%" y1="1.29494949%" x2="61.3767327%" y2="88.5681818%" id="linearGradient-2">
+            <stop stop-color="#090058" offset="0%"></stop>
+            <stop stop-color="#070033" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-42.8651515%" y1="-71.85625%" x2="96.5287879%" y2="130.64375%" id="linearGradient-3">
+            <stop stop-color="#A0CBFF" offset="0%"></stop>
+            <stop stop-color="#A0CBFE" offset="39.41%"></stop>
+            <stop stop-color="#8EC2FC" offset="58.3%"></stop>
+            <stop stop-color="#83BCFB" offset="78.38%"></stop>
+            <stop stop-color="#7FBAFB" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="-90.1673077%" y1="-157.114373%" x2="87.4538462%" y2="106.400958%" id="linearGradient-4">
+            <stop stop-color="#A0CBFF" offset="0%"></stop>
+            <stop stop-color="#A0CBFE" offset="39.41%"></stop>
+            <stop stop-color="#8EC2FC" offset="58.3%"></stop>
+            <stop stop-color="#83BCFB" offset="78.38%"></stop>
+            <stop stop-color="#7FBAFB" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="coolhue-sprite" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="icon-grab" transform="translate(7.000000, 4.000000)" fill="#FFFFFF">
+            <path d="M12.525,12.621 L7.919,16.901 C7.919,16.901 7.186,18 6.5,18 C5.814,18 5.081,16.901 5.081,16.901 L0.475,12.621 C-0.126,12.02 -0.126,11.044 0.475,10.443 C1.076,9.841 2.052,9.841 2.653,10.443 L5,12.79 L5,1.5 C5,0.672 5.672,0 6.5,0 C7.328,0 8,0.672 8,1.5 L8,12.79 L10.347,10.443 C10.948,9.841 11.924,9.841 12.525,10.443 C13.126,11.044 13.126,12.02 12.525,12.621 Z" id="Shape"></path>
+        </g>
+        <g id="icon-code" transform="translate(26.000000, 5.000000)" fill="#FFFFFF">
+            <path d="M25.602,9.095 L18.839,15.529 C18.191,16.145 17.14,16.145 16.491,15.529 C15.843,14.913 15.843,13.914 16.491,13.298 L22.135,7.998 L16.491,2.699 C15.843,2.083 15.843,1.084 16.491,0.468 C17.14,-0.148 18.191,-0.148 18.839,0.468 L25.602,6.902 C26.117,7.391 26.117,8.606 25.602,9.095 Z M9.538,15.529 C8.888,16.145 7.834,16.145 7.183,15.529 L0.399,9.095 C-0.118,8.606 -0.118,7.391 0.399,6.902 L7.183,0.468 C7.834,-0.148 8.888,-0.148 9.538,0.468 C10.189,1.084 10.189,2.083 9.538,2.699 L3.877,7.998 L9.538,13.298 C10.189,13.914 10.189,14.913 9.538,15.529 Z" id="Shape"></path>
+        </g>
+        <g id="icon-view" transform="translate(55.000000, 6.000000)">
+            <path d="M10,14 C13.6818983,14 17.0152317,11.6666667 20,7 C17.0152317,2.33333333 13.6818983,0 10,0 C6.31810167,0 2.98476833,2.33333333 0,7 C2.98476833,11.6666667 6.31810167,14 10,14 Z" id="Oval" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"></path>
+            <circle id="Oval-2" fill="#FFFFFF" cx="10" cy="7" r="3"></circle>
+        </g>
+        <g id="icon-distro" transform="translate(18.000000, 41.000000)" fill="#534F5D" fill-rule="nonzero">
+            <path d="M12.45,12.6 L7.85,16.9 C7.85,16.9 7.15,18 6.45,18 C5.75,18 5.05,16.9 5.05,16.9 L0.45,12.6 C-0.15,12 -0.15,11 0.45,10.4 C1.05,9.8 2.05,9.8 2.65,10.4 L4.95,12.7 L4.95,1.5 C4.95,0.7 5.65,0 6.45,0 C7.25,0 7.95,0.7 7.95,1.5 L7.95,12.8 L10.25,10.5 C10.85,9.9 11.85,9.9 12.45,10.5 C13.05,11 13.05,12 12.45,12.6 Z" id="Shape"></path>
+        </g>
+        <path d="M77.5183486,50.5 L80.5458716,47.4724771 C81.1513761,46.8669725 81.1513761,45.9587156 80.5458716,45.4541284 C79.940367,44.8486239 79.0321101,44.8486239 78.5275229,45.4541284 L75.5,48.4816514 L72.4724771,45.4541284 C71.8669725,44.8486239 70.9587156,44.8486239 70.4541284,45.4541284 C69.8486239,46.059633 69.8486239,46.9678899 70.4541284,47.4724771 L73.4816514,50.5 L70.4541284,53.5275229 C69.8486239,54.1330275 69.8486239,55.0412844 70.4541284,55.5458716 C71.059633,56.1513761 71.9678899,56.1513761 72.4724771,55.5458716 L75.5,52.5183486 L78.5275229,55.5458716 C79.1330275,56.1513761 80.0412844,56.1513761 80.5458716,55.5458716 C81.1513761,54.940367 81.1513761,54.0321101 80.5458716,53.5275229 L77.5183486,50.5 Z" id="Shape" fill="#534F5D" fill-rule="nonzero"></path>
+        <g id="icon-customize" transform="translate(53.000000, 77.000000)" fill="#534F5D" fill-rule="nonzero">
+            <path d="M22.9,10.8 L21.4,10.7 C20.8,10.7 20.2,10.3 19.9,9.7 C19.9,9.7 19.9,9.7 19.9,9.7 C19.6,9.1 19.8,8.4 20.2,7.9 L21.2,6.8 C21.7,6.4 21.6,5.6 21,5 L20,4 C19.4,3.4 18.6,3.3 18.2,3.7 L17.1,4.7 C16.6,5.1 15.9,5.2 15.3,5 C15.3,5 15.3,5 15.3,5 C14.7,4.8 14.3,4.2 14.3,3.5 L14.2,2 C14.2,1.4 13.6,0.9 12.8,0.9 L11.4,0.9 C10.6,0.9 10,1.4 10,2 L9.7,3.5 C9.7,4.1 9.3,4.7 8.7,5 C8.7,5 8.7,5 8.7,5 C8.1,5.3 7.4,5.2 6.9,4.7 L5.8,3.7 C5.4,3.3 4.6,3.4 4,4 L3,5 C2.4,5.6 2.3,6.4 2.7,6.8 L3.7,7.9 C4.2,8.4 4.3,9.1 4,9.7 C4,9.7 4,9.7 4,9.7 C3.8,10.3 3.2,10.7 2.5,10.7 L1.1,10.8 C0.5,10.8 0,11.5 0,12.3 L0,13.7 C0,14.5 0.5,15.1 1.1,15.1 L2.6,15.2 C3.2,15.2 3.8,15.6 4.1,16.2 C4.1,16.2 4.1,16.2 4.1,16.2 C4.3,16.8 4.2,17.5 3.8,18 L2.8,19.1 C2.3,19.6 2.4,20.4 3,21 L4,22 C4.6,22.6 5.4,22.7 5.8,22.3 L6.9,21.3 C7.4,20.9 8.1,20.8 8.7,21 C8.7,21 8.7,21 8.7,21 C9.3,21.2 9.7,21.8 9.7,22.5 L9.8,24 C9.8,24.6 10.4,25.1 11.2,25.1 L12.6,25.1 C13.4,25.1 14,24.6 14,24 L14.1,22.5 C14.1,21.9 14.5,21.3 15.1,21 C15.1,21 15.1,21 15.1,21 C15.7,20.7 16.4,20.9 16.9,21.3 L18,22.3 C18.4,22.7 19.2,22.6 19.8,22 L20.8,21 C21.4,20.4 21.5,19.6 21.1,19.2 L20.1,18.1 C19.7,17.6 19.6,16.9 19.8,16.3 C19.8,16.3 19.8,16.3 19.8,16.3 C20,15.7 20.6,15.3 21.3,15.3 L22.8,15.2 C23.4,15.2 23.9,14.6 23.9,13.8 L23.9,12.4 C24,11.5 23.5,10.8 22.9,10.8 Z M12,16.7 C10,16.7 8.3,15.1 8.3,13 C8.3,11 9.9,9.3 12,9.3 C14.1,9.3 15.7,10.9 15.7,13 C15.7,15 14,16.7 12,16.7 Z" id="Shape"></path>
+        </g>
+        <g id="icon-photoshop" transform="translate(27.000000, 78.000000)" fill-rule="nonzero">
+            <g id="Layer_2_1_" fill="url(#linearGradient-1)">
+                <rect id="Rectangle-path" x="0" y="0" width="24" height="23.6"></rect>
+            </g>
+            <g id="Layer_2" transform="translate(1.000000, 1.000000)" fill="url(#linearGradient-2)">
+                <rect id="Rectangle-path" x="0.9" y="0.9" width="20.2" height="19.8"></rect>
+            </g>
+            <g id="Layer_4" transform="translate(5.000000, 6.000000)">
+                <g id="Group">
+                    <path d="M0.8,0.7 C0.8,0.7 2.3,0.7 3.6,0.7 C4.9,0.7 5.8,1 6.4,1.5 C7,2 7.4,2.8 7.4,3.8 C7.4,4.8 7,5.5 6.5,6 C5.8,6.7 5,7.1 3.6,7.2 C3.2,7.2 2.9,7.2 2.9,7.2 L2.9,10.3 L0.9,10.3 L0.8,0.7 Z M2.8,5.5 C3,5.5 3.2,5.5 3.5,5.5 C4.6,5.5 5.3,4.8 5.3,3.8 C5.3,2.9 4.7,2.2 3.7,2.1 C3.3,2.1 2.9,2.1 2.9,2.1 L2.9,5.5 L2.8,5.5 Z" id="Shape" fill="url(#linearGradient-3)"></path>
+                    <path d="M8.1,8.2 C8.5,8.5 9.5,8.8 10.1,8.8 C10.8,8.8 11,8.6 11,8.2 C11,7.8 10.8,7.4 9.9,7.2 C8.4,6.7 7.9,6.1 7.9,5.3 C7.9,3.9 9,2.9 10.8,2.9 C11.6,2.9 12.3,3.2 12.7,3.4 L12.7,5 C12.4,4.8 11.5,4.4 10.8,4.4 C10.3,4.4 10,4.6 10,5 C10,5.3 10.3,5.5 11.2,5.8 C12.6,6.3 13.1,7 13.1,8 C13.1,9.3 12.1,10.4 10,10.3 C9.3,10.3 8.5,10 8,9.7 L8.1,8.2 Z" id="Shape" fill="url(#linearGradient-4)"></path>
+                </g>
+            </g>
+        </g>
+        <g id="icon-sketch" transform="translate(1.000000, 79.000000)" fill-rule="nonzero">
+            <g id="Base" fill="#FFAE00">
+                <polygon id="Polygon" points="12 21.7 0 7.8 5.2 0.8 12 0 18.8 0.7 24 7.7"></polygon>
+            </g>
+            <g id="Bottom-Back" transform="translate(0.000000, 7.773000)" fill="#EC6C00">
+                <polygon id="Polygon-2" points="12 13.9 0 0 24 0"></polygon>
+            </g>
+            <g id="Bottom-Mid" transform="translate(4.858000, 7.773000)" fill="#FFAE00">
+                <polygon id="Polygon-3" points="7.1 13.9 0 0 14.3 0"></polygon>
+            </g>
+            <g id="Top-Mid" transform="translate(4.858000, 0.000000)" fill="#FFEFB4">
+                <polygon id="Polygon-4" points="7.1 0 0 7.8 14.3 7.8"></polygon>
+            </g>
+            <g id="Top-Side-Left" transform="translate(0.000000, 0.729000)" fill="#FFAE00">
+                <polygon id="Polygon-5" points="5.2 0 2.5 3.5 0 7 4.9 7"></polygon>
+            </g>
+            <g id="Top-Side-Right" transform="translate(18.802000, 0.729000)" fill="#FFAE00">
+                <polygon id="Polygon-6" points="0 0 2.7 3.5 5.2 7 0.3 7"></polygon>
+            </g>
+            <g id="Top-Left" transform="translate(4.858000, 0.000000)" fill="#FED305">
+                <polygon id="Polygon-7" points="0.3 0.7 0 7.8 7.1 0"></polygon>
+            </g>
+            <g id="Top-Right" transform="translate(12.000000, 0.000000)" fill="#FED305">
+                <polygon id="Polygon-8" points="6.8 0.7 7.1 7.7 0 0"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

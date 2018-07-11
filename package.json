@@ -1,0 +1,21 @@
+{
+  "name": "coolhue",
+  "version": "2.0.0",
+  "description": "Coolest handpicked Gradient Hues and Swatches",
+  "scripts": {
+    "coolhue": "browser-sync start --server --files \"*.html, css/*.css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/webkul/coolhue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/webkul/coolhue/issues"
+  },
+  "homepage": "https://github.com/webkul/coolhue#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.5"
+  }
+}
