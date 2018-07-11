@@ -13,7 +13,7 @@ You should have [`bower`](https://bower.io/#install-bower) package manager insta
 4. All the gradients which appears in the browser are rendered from `scripts/coolhue.json` file.
 5. You just need to update the `coolhue.json` Object (array) to create your very own gradient palette. Open `scripts/coolhue.json` in the text editor and add or update the hex codes to generate the gradient palettes.
  
-[![cooHue JS Object](https://webkul.github.io/coolhue/images/coolhue-json.png.png)](https://github.com/webkul/coolhue/blob/master/scripts/coolhue.json)
+[![cooHue JS Object](https://webkul.github.io/coolhue/images/coolhue-json.png)](https://github.com/webkul/coolhue/blob/master/scripts/coolhue.json)
 
 ## Including CoolHue in `npm` Workflow
 CoolHue is also available as a node module. You can read [How it works](https://www.npmjs.com/package/coolhue) with `npm` to get started. If you are already familiar; Installation command is mentioned just below -  
