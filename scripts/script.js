@@ -85,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         chPaper.appendChild(footerWrapper);
     }
 
-    window.onclick = function (event) {
+    var coolHueAction = function (event) {
         //Copy Code
         if (event.target.matches(".ch-code")) {
             var eventColorFrom = event.target.dataset.colorFrom;
@@ -148,6 +148,12 @@ document.addEventListener("DOMContentLoaded", function () {
             var fileName = "coolHue-" + eventColorFrom.slice(1, 7) + "-" + eventColorTo.slice(1, 7);
             event.target.setAttribute("download", fileName);
         }
+    }
+    window.onclick = function (event) {
+        coolHueAction(event);
+    }
+    window.ontouchstart = function (event) {
+        coolHueAction(event);
     }
 
     //Distro
