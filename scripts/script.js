@@ -176,4 +176,18 @@ document.addEventListener("DOMContentLoaded", function () {
             this.classList.add("ch-distro-icon-active");
         }
     });
+    var starRequest = new XMLHttpRequest();
+    starRequest.open("GET", "https://api.github.com/repos/webkul/coolhue", true);
+    starRequest.send();
+    var starPromise = new Promise(function (resolve, reject) {
+        starRequest.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                resolve(this.responseText);
+            }
+        }
+    });
+    starPromise.then(function (starData) {
+        apiObj = JSON.parse(starData);
+        chStarCount.innerHTML = (apiObj.stargazers_count / 1000).toFixed(1) + " K Stars";
+    });
 });
