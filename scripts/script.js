@@ -12,7 +12,6 @@ document.addEventListener("DOMContentLoaded", function () {
     var gradientStart = " 10%, ";
     var gradientEnd = " 100%)";
     var colorData;
-    var chStarCount = document.querySelector(".ch-starcount");
 
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "scripts/coolhue.json", true);
@@ -86,7 +85,7 @@ document.addEventListener("DOMContentLoaded", function () {
         chPaper.appendChild(footerWrapper);
     }
 
-    window.onclick = function (event) {
+    var coolHueAction = function (event) {
         //Copy Code
         if (event.target.matches(".ch-code")) {
             var eventColorFrom = event.target.dataset.colorFrom;
@@ -150,6 +149,12 @@ document.addEventListener("DOMContentLoaded", function () {
             event.target.setAttribute("download", fileName);
         }
     }
+    window.onclick = function (event) {
+        coolHueAction(event);
+    }
+    window.ontouchstart = function (event) {
+        coolHueAction(event);
+    }
 
     //Distro
     var chDistroWrapper = document.querySelector(".ch-distro-wrapper");
@@ -170,20 +175,5 @@ document.addEventListener("DOMContentLoaded", function () {
             chDistroWrapper.classList.add("ch-distro-wrapper-flap-up");
             this.classList.add("ch-distro-icon-active");
         }
-    });
-
-    var starRequest = new XMLHttpRequest();
-    starRequest.open("GET", "https://api.github.com/repos/webkul/coolhue", true);
-    starRequest.send();
-    var starPromise = new Promise(function(resolve, reject){
-        starRequest.onreadystatechange =  function(){
-            if(this.readyState == 4 && this.status == 200){
-                resolve(this.responseText);
-            }
-        }
-    });
-    starPromise.then(function(starData){
-        apiObj = JSON.parse(starData);
-        chStarCount.innerHTML = (apiObj.stargazers_count/1000).toFixed(1) + " K Stars";
     });
 });

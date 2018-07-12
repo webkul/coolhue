@@ -94,7 +94,7 @@ a:hover {
     content: "Star";
 }
 
-.ch-starcount{
+.ch-starcount {
     display: block;
     text-align: center;
     margin-top: -12px;
@@ -112,7 +112,6 @@ a:hover {
 .github {
     background-image: url("../images/icon-github.svg");
 }
-
 
 p {
     text-align: left;
@@ -136,7 +135,7 @@ p {
     width: 180px;
     display: inline-block;
     border-radius: 12px;
-    margin: 20px;
+    margin: 25px;
     box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     transform: translateY(0px);
@@ -235,11 +234,10 @@ p {
     width: 260px;
     max-width: 80%;
     top: 30px;
-    right: 0px;
+    right: 0;
     z-index: 500;
     text-align: right;
-    max-height: 70%;
-    overflow-y: auto;
+    overflow: none;
 }
 
 .ch-notify {
@@ -411,11 +409,12 @@ noscript {
         display: block;
         animation: micro-move .3s cubic-bezier(0.4, 0, 0.2, 1);
     }
-    .ch-gradient-brick:hover{
+    .ch-gradient-brick:hover {
         transform: translateY(0px);
         box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
     }
-    .ch-code:hover, .ch-grab:hover{
+    .ch-code:hover,
+    .ch-grab:hover {
         transform: translateY(0px);
     }
 }
