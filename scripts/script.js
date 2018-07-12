@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
     var gradientStart = " 10%, ";
     var gradientEnd = " 100%)";
     var colorData;
+    var chStarCount = document.querySelector(".ch-starcount");
 
     var xhr = new XMLHttpRequest();
     xhr.open("GET", "scripts/coolhue.json", true);
