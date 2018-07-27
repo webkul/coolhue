@@ -13,6 +13,7 @@ body {
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
 }
 
 a {
@@ -166,8 +167,7 @@ p {
     animation: micro-move .3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.ch-code,
-.ch-grab {
+.ch-code, .ch-grab {
     width: 26px;
     height: 26px;
     display: inline-block;
@@ -190,14 +190,12 @@ p {
     }
 }
 
-.ch-code:hover,
-.ch-grab:hover {
+.ch-code:hover, .ch-grab:hover {
     opacity: 1;
     transform: translateY(-4px);
 }
 
-.ch-code:active,
-.ch-grab:active {
+.ch-code:active, .ch-grab:active {
     opacity: 1;
     transform: translateY(-2px);
 }
@@ -222,8 +220,7 @@ p {
     margin-bottom: 3px;
 }
 
-.ch-color-from,
-.ch-color-to {
+.ch-color-from, .ch-color-to {
     color: #929197;
     display: block;
     padding: 0px;
@@ -282,8 +279,7 @@ p {
     cursor: pointer;
 }
 
-.ch-distro-icon-active,
-.ch-distro-icon:hover {
+.ch-distro-icon-active, .ch-distro-icon:hover {
     box-shadow: 0px 25px 30px 5px rgba(0, 0, 0, 0.1), 0px 5px 20px 5px rgba(0, 0, 0, 0.03);
     transform: translateY(-6px);
 }
@@ -383,8 +379,7 @@ p {
         opacity: 0;
         transform: translateY(25px);
     }
-    10%,
-    90% {
+    10%, 90% {
         opacity: 1;
         transform: translateY(0px);
     }
@@ -413,8 +408,7 @@ noscript {
         transform: translateY(0px);
         box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
     }
-    .ch-code:hover,
-    .ch-grab:hover {
+    .ch-code:hover, .ch-grab:hover {
         transform: translateY(0px);
     }
 }
@@ -426,5 +420,24 @@ noscript {
     .ch-gradient-brick {
         display: block;
         margin: 35px auto;
+    }
+}
+
+@supports(display: grid) {
+    .ch-paper {
+        position: initial;
+        text-align: initial;
+        width: 80%;
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+        grid-gap: 2rem;
+    }
+    .ch-sidebar{
+        position: fixed;
+    }
+    .ch-gradient-brick {
+        width: 100%;
+        margin: 0;
     }
 }
