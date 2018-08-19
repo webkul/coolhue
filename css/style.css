@@ -13,6 +13,7 @@ body {
     -webkit-font-smoothing: subpixel-antialiased;
     -moz-osx-font-smoothing: grayscale;
     font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
 }
 
 a {
@@ -20,85 +21,66 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-.ch-sidebar {
-    width: 85px;
-    padding: 10px;
-    position: absolute;
-    left: 0;
-    top: 0;
-    bottom: 0;
-    border-right: solid 1px #E5E5E5;
+.ch-topbar {
+    width: 100%;
+    border-bottom: solid 1px #E5E5E5;
     background: #FFFFFF;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.08);
-    z-index: 300;
+    font-size: 0;
 }
 
-.ch-sidebar img {
-    display: block;
-    margin: 0 auto;
+.ch-topbar .grid-lt {
+    width: 25%;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+.ch-topbar .grid-rt {
+    width: 75%;
+    height: 32px;
+    display: inline-block;
+    text-align: right;
+    vertical-align: middle;
+    padding: 0 10px;
+}
+
+.ch-share-brick {
+    padding: 0 5px;
+    border-radius: 5px;
+    color: #534e5c;
+    background: #FFFFFF;
+    transition: .25s ease-in;
+    transform: translateY(0px);
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 2px;
+}
+
+.ch-share-brick:hover {
+    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
 }
 
 .ch-share {
     width: 32px;
     height: 32px;
-    margin-top: 32px;
-    display: block;
-    margin: 15px auto;
+    display: inline-block;
+    vertical-align: middle;
     opacity: .75;
     transition: .25s ease-in;
-    position: relative;
 }
 
-.ch-share:first-of-type {
-    margin-top: 25px;
+.ch-share-text,
+.ch-starcount {
+    display: inline-block;
+    vertical-align: middle;
+    color: #534e5c;
+    font-size: 16px;
+    margin-left: 3px;
 }
 
 .ch-share:hover {
     opacity: 1;
-}
-
-.ch-share:after {
-    font-size: 14px;
-    left: 34px;
-    top: 0px;
-    position: absolute;
-    padding: 3px 15px 5px;
-    border-radius: 15px;
-    color: #534e5c;
-    background: #FFFFFF;
-    box-shadow: 0px 6px 20px 0px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    transition: .25s ease-in;
-    margin-top: 3px;
-    transform: translateX(-2px);
-}
-
-.ch-share:hover:after {
-    opacity: 1;
-    transform: translateX(2px);
-}
-
-.ch-share.twitter:after {
-    content: "Tweet";
-}
-
-.ch-share.facebook:after {
-    content: "Share";
-}
-
-.ch-share.github:after {
-    content: "Star";
-}
-
-.ch-starcount {
-    display: block;
-    text-align: center;
-    margin-top: -12px;
-    color: #534e5c;
 }
 
 .twitter {
@@ -114,21 +96,21 @@ a:hover {
 }
 
 p {
-    text-align: left;
     font-size: 18px;
     color: #929197;
     padding: 15px 25px;
 }
 
 .ch-paper {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    padding: 20px 20px 20px 105px;
-    text-align: left;
-    overflow: auto;
+    width: 100%;
+    max-width: 1600px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+.ch-footer {
+    text-align: center;
+    padding: 0 0 25px 0;
 }
 
 .ch-gradient-brick {
@@ -237,7 +219,6 @@ p {
     right: 0;
     z-index: 500;
     text-align: right;
-    overflow: none;
 }
 
 .ch-notify {
@@ -257,9 +238,9 @@ p {
 }
 
 .ch-distro {
-    position: absolute;
+    position: fixed;
     z-index: 50;
-    left: 15px;
+    right: 15px;
     bottom: 15px;
     min-width: 200px;
     max-width: 100%;
@@ -270,7 +251,7 @@ p {
     height: 50px;
     border-radius: 50%;
     position: absolute;
-    left: 0px;
+    right: 0px;
     bottom: 0px;
     background-color: #FFFFFF;
     background-image: url("../images/coolhue-sprite.svg");
@@ -312,7 +293,6 @@ p {
     font-size: 17px;
     background-position: left center;
     background-repeat: no-repeat;
-    vertical-align: middle;
 }
 
 .ch-distro-type:hover {
@@ -419,12 +399,15 @@ noscript {
     }
 }
 
-@media screen and (max-width: 600px) {
-    .ch-paper {
-        text-align: center;
+@media screen and (max-width:480px) {
+    .ch-share-brick {
+        margin: 0;
     }
-    .ch-gradient-brick {
-        display: block;
-        margin: 35px auto;
+    .ch-share-brick:hover {
+        box-shadow: none;
+    }
+    .ch-share-text,
+    .ch-starcount {
+        display: none;
     }
 }

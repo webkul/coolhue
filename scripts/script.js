@@ -79,11 +79,6 @@ document.addEventListener("DOMContentLoaded", function () {
             nodeGradientBrick.appendChild(nodeColors);
             chPaper.appendChild(nodeGradientBrick);
         }
-        var footerWrapper = document.createElement("div");
-        var para = document.createElement("p");
-        para.innerHTML = "&copy; Copyright <a href=\"https://webkul.com\" target=\"_blank\" rel=\"noopener\">Webkul Software</a>, All rights reserved.";
-        footerWrapper.appendChild(para);
-        chPaper.appendChild(footerWrapper);
     }
 
     var coolHueAction = function (event) {
