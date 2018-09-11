@@ -51,20 +51,28 @@
         <div class="grid-rt">
             <!-- Hiring Flag  -->
             <style>
-                .hiring-flag{
+                .hiring-flag {
                     display: inline-block;
                     vertical-align: middle;
                 }
-                .hiring-flag a{
+
+                .hiring-flag a {
                     font: 16px 'Source Sans Pro', sans-serif;
-                    background: linear-gradient(45deg,#ff36a5 25%,#0060ff 50%,#43008f 70%);
+                    background: linear-gradient(45deg, #ff36a5 25%, #0060ff 50%, #43008f 70%);
                     background-clip: text;
                     -webkit-background-clip: text;
                     color: transparent;
                     margin: 0 5px;
                 }
-                .hiring-flag a:hover{
-                   border-bottom: solid 1px #730be9;       
+
+                .hiring-flag a:hover {
+                    border-bottom: solid 1px #730be9;
+                }
+
+                @media screen and (max-width:600px) {
+                    .ch-share-brick:nth-of-type(3) {
+                        display: none;
+                    }
                 }
             </style>
 
