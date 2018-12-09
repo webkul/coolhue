@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <channel>
+  <title>CoolHue - Sketch Plugin</title>
+<link>https://raw.githubusercontent.com/webkul/coolhue/master/appcast.xml</link>
+<description>Coolest Gradient Hues and Swatches</description>
+<language>en</language>
+    <item>
+      <title>Version 2.0.0</title>
+      <enclosure url="https://github.com/webkul/webkul/releases/download/v1.0.1/coolhue.sketchplugin.zip" sparkle:version="2.0.0"/>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,125 @@
+::-webkit-scrollbar {
+    width: 4px;
+}
+
+body .wrapper::-webkit-scrollbar-track {
+    background: #F2F2F2;
+}
+
+body .wrapper::-webkit-scrollbar-thumb {
+    background: #D7DDE4;
+}
+
+body.dark .wrapper::-webkit-scrollbar-track {
+    background: #2c293a;
+}
+
+body.dark .wrapper::-webkit-scrollbar-thumb {
+    background: #444059;
+}
+
+* {
+    box-sizing: border-box;
+    -webkit-user-select: none;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    background: #FFFFFF;
+    color: #282828;
+    font-family: -apple-system, system-ui, sans-serif;
+    margin: 0;
+    height: 100%; 
+}
+
+.wrapper {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 40px;
+    padding: 4px;
+    text-align: center;
+    overflow: auto;
+}
+
+.controller {
+    z-index: 5;
+    border-top: solid 1px #D7DDE4;
+    position: fixed;
+    height: 40px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.brick {
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin: 4px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1), 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
+}
+.brick:active{
+    opacity: .85;
+}
+
+.grd {
+    display: block;
+    padding: 10px;
+    font-size: 0;
+}
+
+.grd-lt,
+.grd-rt {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.grd-lt {
+    text-align: left;
+    width: 70%;
+}
+
+.grd-rt {
+    text-align: right;
+    width: 30%;
+}
+
+.grd-lt h2.cl-title {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    color: #8e92a1;
+    font-weight: normal;
+    cursor: default;
+}
+
+.grd-rt .cl-theme {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../images/sprite.png");
+    background-position: left center;
+}
+
+body.dark {
+    background: #343141;
+}
+
+body.dark .controller {
+    border-top-color: #444059;
+}
+
+body.dark .grd-lt h2.cl-title {
+    color: #84818e;
+}
+
+body.dark .grd-rt .cl-theme {
+    background-position: right center;
+}

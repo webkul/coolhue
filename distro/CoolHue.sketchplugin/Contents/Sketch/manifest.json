@@ -1,0 +1,26 @@
+{
+  "compatibleVersion": 3,
+  "bundleVersion": 1,
+  "icon": "icon.png",
+  "commands": [
+    {
+      "name": "Palette",
+      "identifier": "coolhue-palette-trigger",
+      "script": "coolhue.js"
+    }
+  ],
+  "menu": {
+    "title": "CoolHue",
+    "items": [
+      "coolhue-palette-trigger"
+    ]
+  },
+  "appcast": "https://raw.githubusercontent.com/webkul/coolhue/master/appcast.xml",
+  "version": "2.0.0",
+  "description": "Coolest handpicked Gradient Hues and Swatches",
+  "name": "CoolHue",
+  "identifier": "CoolHue",
+  "disableCocoaScriptPreprocessor": true,
+  "author": "Webkul, Nitish Khagwal",
+  "authorEmail": "support@webkul.com"
+}
