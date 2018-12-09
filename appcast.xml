@@ -7,7 +7,7 @@
 <language>en</language>
     <item>
       <title>Version 2.0.0</title>
-      <enclosure url="https://github.com/webkul/webkul/releases/download/v1.0.1/coolhue.sketchplugin.zip" sparkle:version="2.0.0"/>
+      <enclosure url="https://github.com/webkul/coolhue/releases/download/v2.0.3/CoolHue.sketchplugin.zip" sparkle:version="2.0.0"/>
     </item>
   </channel>
 </rss>
