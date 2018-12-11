@@ -2344,7 +2344,7 @@ __webpack_require__.r(__webpack_exports__);
   };
   var browserWindow = new sketch_module_web_view__WEBPACK_IMPORTED_MODULE_0___default.a(options);
   browserWindow.isAlwaysOnTop();
-  browserWindow.loadURL(__webpack_require__(/*! ./view.html?1.0.1 */ "./src/view.html?1.0.1"));
+  browserWindow.loadURL(__webpack_require__(/*! ./view.html */ "./src/view.html"));
   browserWindow.webContents.on('nativeGradientApplier', function (fetchedData) {
     Object(_gradient__WEBPACK_IMPORTED_MODULE_1__["GradientMaker"])(fetchedData.firstColor, fetchedData.secondColor);
   });
@@ -2377,7 +2377,7 @@ function GradientMaker(firstStop, secondStop) {
 
   if (selectedLayers.length != null && selectedLayers.length != 0) {
     selectedLayers.forEach(function (layer) {
-      if (layer.type === "Shape") {
+      if (layer.type === "Shape" || layer.type === "ShapePath") {
         var layerFrame = layer.frame;
         layer.style.fills = [{
           fillType: Style.FillType.Gradient,
@@ -2411,14 +2411,14 @@ function GradientMaker(firstStop, secondStop) {
 
 /***/ }),
 
-/***/ "./src/view.html?1.0.1":
-/*!*****************************!*\
-  !*** ./src/view.html?1.0.1 ***!
-  \*****************************/
+/***/ "./src/view.html":
+/*!***********************!*\
+  !*** ./src/view.html ***!
+  \***********************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resources/049033edab13059540b2a210918419cb.html").path();
+module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resources/ba2d9836387884f15f45466d8db71894.html").path();
 
 /***/ }),
 
