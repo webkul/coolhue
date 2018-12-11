@@ -6,8 +6,12 @@
 <description>Coolest Gradient Hues and Swatches</description>
 <language>en</language>
     <item>
-      <title>Version 2.0.0</title>
-      <enclosure url="https://github.com/webkul/coolhue/releases/download/v2.0.3/CoolHue.sketchplugin.zip" sparkle:version="2.0.0"/>
+      <title>Version 2.0.3</title>
+      <enclosure url="https://github.com/webkul/coolhue/releases/download/v2.0.3/CoolHue.sketchplugin.zip" sparkle:version="2.0.3"/>
+    </item>
+    <item>
+      <title>Version 2.0.4</title>
+      <enclosure url="https://github.com/webkul/coolhue/releases/download/v2.0.4/CoolHue.sketchplugin.zip" sparkle:version="2.0.4"/>
     </item>
   </channel>
 </rss>
