@@ -466,7 +466,7 @@ noscript {
     background-image: linear-gradient(135deg, #ffd515 15%, #ff6928 60%);
     color: rgba(255,255,255,1);
     text-decoration: none;
-    padding: 16px 20px 19px 20px;
+    padding: 4px 20px 5px 20px;
     font-size: 18px;
     border-radius: 90px;
     transition: transform .25s;
@@ -477,10 +477,12 @@ noscript {
     transform: translateY(-3px);
 }
 
-.wk-wrapper .wk-cta div{
+.wk-wrapper .wk-cta img, .wk-wrapper .wk-cta p{
     display: inline-block;
     vertical-align: middle;
     margin: 0 3px;
+    text-transform: uppercase;
+    color: #FFFFFF;
 }
 
 .wk-wrapper .wk-content, .wk-preview{
@@ -518,7 +520,7 @@ noscript {
     .wk-preview{
        display: none;
    }
-   .wk-content{
+   .wk-wrapper .wk-content{
        width: 100%;
        text-align: center;
    }
