@@ -77,7 +77,8 @@
             </style>
 
             <div class="hiring-flag">
-                <a href="https://webkul.github.io/coolhue/sketch-plugin" target="_blank" rel="noopener">CoolHue Sketch Plugin</a>
+                <a href="https://webkul.github.io/coolhue/sketch-plugin" target="_blank" rel="noopener">CoolHue Sketch
+                    Plugin</a>
             </div>
             <!-- Hiring Flag  -->
             <a class="ch-share-brick" href="https://twitter.com/home?status=CoolHue%202.0%20-%20Coolest%20Gradient%20Hues%20and%20Swatches%20https%3A//webkul.github.io/coolhue/%20%23coolhue%20%23gradientpalette%20%23gradientswatch%20%23colorswatch%20%23opensource%20via%20%40webkul"
@@ -126,7 +127,61 @@
             <a class="ch-distro-type" href="http://bit.ly/coolhue-dev" target="_blank">Customize Palette</a>
         </div>
     </div>
-    <!--//Distro-->
+    <div class="fade-overlay">
+    <div class="wk-wrapper">
+        <div class="wk-close dg-close"><img width="17" src="images/icon-close.svg" alt=""></div>
+    <div class="wk-content">
+        <div class="wk-titling"><img width="128" src="images/coolhue-logo.png" alt="coolhue-logo"></div>
+        <div class="wk-titling">
+                <h1>Coolhue 2.0</h1>
+                <p><span>Sketch</span> Plugin is out now.</p>
+        </div>
+        <h3>Coolest handpicked Gradient Palette and Swatch for your next super amazing stuff.</h3>
+        <a href="sketch-plugin" class="wk-cta"><div><img width="30" src="images/sketch-logo.png" alt="sketch-logo"></div><div>Download Plugin Now</div></a>
+    </div>
+    <div class="wk-preview">
+        <img src="images/swatch.png" alt="CoolHue Gradient Sketch App Plugin ">
+    </div>
+</div>
+</div>
+    <script type="text/javascript">
+        var vBody = document.body;
+        var vfadeOverlay = document.querySelector(".fade-overlay");
+        var vDialog = document.querySelector(".dialog");
+        var vClose = document.querySelector(".dg-close");
+        var dialogPreview = sessionStorage.getItem("dialog");
+
+        var hideDialog = function () {
+            vfadeOverlay.classList.add("hide-overlay");
+            setTimeout(function () {
+                if (vBody.classList.contains("overflow-blocked")) {
+                    vBody.classList.remove("overflow-blocked");
+                }
+                if (vfadeOverlay.classList.contains("fade-overlay-show")) {
+                    vfadeOverlay.classList.remove("fade-overlay-show");
+                }
+            }, 500);
+        }
+
+        var showDialog = function () {
+            if (vfadeOverlay != undefined && vfadeOverlay != null) {
+                vBody.classList.add("overflow-blocked");
+                vfadeOverlay.classList.add("fade-overlay-show");
+                vClose.addEventListener("click", function () {
+                    hideDialog();
+                    if (typeof (Storage) !== "undefined") {
+                        sessionStorage.setItem("dialog", "hidden");
+                    }
+                });
+            }
+        };
+
+        if (typeof (Storage) !== "undefined") {
+            if (dialogPreview == undefined || dialogPreview == null || dialogPreview !== "hidden") {
+                setTimeout(showDialog, 1000);
+            }
+        }
+    </script>
 </body>
 
 </html>
