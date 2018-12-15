@@ -137,7 +137,7 @@
                 <p><span>Sketch</span> Plugin is out now.</p>
         </div>
         <h3>Coolest handpicked Gradient Palette and Swatch for your next super amazing stuff.</h3>
-        <a href="sketch-plugin" class="wk-cta"><img width="30" src="images/sketch-logo.png" alt="sketch-logo"><p>Download Plugin Now</p></a>
+        <a href="sketch-plugin" target="_blank" class="wk-cta dg-map"><img width="30" src="images/sketch-logo.png" alt="sketch-logo"><p>Download Plugin Now</p></a>
     </div>
     <div class="wk-preview">
         <img src="images/swatch.png" alt="CoolHue Gradient Sketch App Plugin ">
@@ -148,8 +148,8 @@
         var vBody = document.body;
         var vfadeOverlay = document.querySelector(".fade-overlay");
         var vDialog = document.querySelector(".dialog");
-        var vClose = document.querySelector(".dg-close");
-        var dialogPreview = sessionStorage.getItem("dialog");
+        var vClose = document.querySelector(".dg-map");
+        var dialogPreview = localStorage.getItem("dialog");
 
         var hideDialog = function () {
             vfadeOverlay.classList.add("hide-overlay");
@@ -170,7 +170,7 @@
                 vClose.addEventListener("click", function () {
                     hideDialog();
                     if (typeof (Storage) !== "undefined") {
-                        sessionStorage.setItem("dialog", "hidden");
+                        localStorage.setItem("dialog", "hidden");
                     }
                 });
             }
