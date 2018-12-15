@@ -149,6 +149,7 @@
         var vfadeOverlay = document.querySelector(".fade-overlay");
         var vDialog = document.querySelector(".dialog");
         var vClose = document.querySelector(".dg-map");
+        var vCross = document.querySelector(".dg-close");
         var dialogPreview = localStorage.getItem("dialog");
 
         var hideDialog = function () {
@@ -167,6 +168,7 @@
             if (vfadeOverlay != undefined && vfadeOverlay != null) {
                 vBody.classList.add("overflow-blocked");
                 vfadeOverlay.classList.add("fade-overlay-show");
+                vCross.addEventListener("click", hideDialog);
                 vClose.addEventListener("click", function () {
                     hideDialog();
                     if (typeof (Storage) !== "undefined") {
