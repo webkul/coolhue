@@ -399,7 +399,7 @@
         dwnldPromise.then(function (dwnldData) {
             apiObj = JSON.parse(dwnldData);
             var countNumber = 0;
-            for (var i = 0; i < 2; i++) {
+            for (var i = 0; i < 3; i++) {
                 countNumber += apiObj[i].assets[0].download_count;
             }
             var dwnldWrapper = document.querySelector(".dwnld-wrapper");
