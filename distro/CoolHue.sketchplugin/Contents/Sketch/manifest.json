@@ -16,7 +16,7 @@
     ]
   },
   "appcast": "https://raw.githubusercontent.com/webkul/coolhue/master/appcast.xml",
-  "version": "2.0.4",
+  "version": "2.0.5",
   "description": "Coolest handpicked Gradient Hues and Swatches",
   "name": "CoolHue",
   "identifier": "CoolHue",

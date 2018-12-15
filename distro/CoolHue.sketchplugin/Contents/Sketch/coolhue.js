@@ -2418,7 +2418,7 @@ function GradientMaker(firstStop, secondStop) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resources/ba2d9836387884f15f45466d8db71894.html").path();
+module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resources/f26f00243c3832631637c6f76c717088.html").path();
 
 /***/ }),
 

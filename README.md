@@ -21,7 +21,7 @@ CoolHue is also available as a node module. You can read [How it works](https://
 `npm install --save-dev coolhue`
    
 ## Sketch App Plugin
-1. Download [`Coolhue.sketchplugin.zip`](https://github.com/webkul/coolhue/releases/download/v2.0.4/CoolHue.sketchplugin.zip)
+1. Download [`Coolhue.sketchplugin.zip`](https://github.com/webkul/coolhue/releases/download/v2.0.5/CoolHue.sketchplugin.zip)
 2. Extract the archive
 3. Install `Coolhue.sketchplugin` for Sketch App
 4. Access it from Sketch's Menu Bar. Go to `Plugins` ➡️ `Coolhue` ➡️ `Palette`

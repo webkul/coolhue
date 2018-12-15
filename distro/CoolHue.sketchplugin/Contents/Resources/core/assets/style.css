@@ -105,7 +105,17 @@ body {
     display: inline-block;
     vertical-align: middle;
     background-image: url("../images/sprite.png");
-    background-position: left center;
+    background-position: 0px 0px;
+}
+
+.grd-rt .cl-shuffle {
+    width: 18px;
+    height: 18px;
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url("../images/sprite.png");
+    background-position: -36px 0px;
+    margin-right: 7px;
 }
 
 body.dark {
@@ -121,5 +131,9 @@ body.dark .grd-lt h2.cl-title {
 }
 
 body.dark .grd-rt .cl-theme {
-    background-position: right center;
+    background-position: -18px 0px;
+}
+
+body.dark .grd-rt .cl-shuffle {
+    background-position: -54px 0px;
 }
