@@ -21,5 +21,9 @@
       <title>Version 2.0.6</title>
       <enclosure url="https://github.com/webkul/coolhue/releases/download/v2.0.6/CoolHue.sketchplugin.zip" sparkle:version="2.0.6"/>
     </item>
+    <item>
+      <title>Version 2.0.7</title>
+      <enclosure url="https://github.com/webkul/coolhue/releases/download/v2.0.7/CoolHue.sketchplugin.zip" sparkle:version="2.0.7"/>
+    </item>
   </channel>
 </rss>

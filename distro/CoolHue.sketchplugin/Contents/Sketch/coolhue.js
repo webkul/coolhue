@@ -2378,13 +2378,13 @@ function GradientMaker(firstStop, secondStop) {
   if (selectedLayers.length != null && selectedLayers.length != 0) {
     selectedLayers.forEach(function (layer) {
       if (layer.type === "Shape" || layer.type === "ShapePath") {
-        var layerFrame = layer.frame;
         layer.style.fills = [{
           fillType: Style.FillType.Gradient,
+          fill: 'Gradient',
           gradient: {
             gradientType: Style.GradientType.Linear,
             from: {
-              x: -.01,
+              x: 0,
               y: 0
             },
             to: {
@@ -2418,7 +2418,7 @@ function GradientMaker(firstStop, secondStop) {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resources/f26f00243c3832631637c6f76c717088.html").path();
+module.exports = "file://" + context.plugin.urlForResourceNamed("_webpack_resources/3ff137287832113452bf2ab1649999f2.html").path();
 
 /***/ }),
 

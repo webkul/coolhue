@@ -4,7 +4,7 @@
   "icon": "icon.png",
   "commands": [
     {
-      "name": "Palette",
+      "name": "Gradient Palette",
       "identifier": "coolhue-palette-trigger",
       "script": "coolhue.js",
       "description": "Show CoolHue Bar",
@@ -18,8 +18,8 @@
     ]
   },
   "appcast": "https://raw.githubusercontent.com/webkul/coolhue/master/appcast.xml",
-  "version": "2.0.6",
-  "description": "Coolest handpicked gradient hues and swatches",
+  "version": "2.0.7",
+  "description": "Coolest handpicked Gradient Hues and Swatches",
   "name": "CoolHue",
   "identifier": "CoolHue",
   "disableCocoaScriptPreprocessor": true,
