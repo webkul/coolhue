@@ -30,14 +30,29 @@ a {
 }
 
 .ch-topbar .grid-lt {
-    width: 25%;
+    width: 35%;
     display: inline-block;
     vertical-align: middle;
     padding: 10px;
 }
-
+.ch-topbar .grid-lt img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.ch-topbar .grid-lt h1{
+    font: 20px 'Source Sans Pro', sans-serif;
+    background: linear-gradient(45deg, #ff36a5 25%, #0060ff 50%, #43008f 70%);
+    background-clip: text;
+    color: transparent;
+    -webkit-background-clip: text;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+}
 .ch-topbar .grid-rt {
-    width: 75%;
+    width: 65%;
     height: 32px;
     display: inline-block;
     text-align: right;
@@ -116,7 +131,6 @@ p {
 .ch-gradient-brick {
     width: 180px;
     display: inline-block;
-    border-radius: 12px;
     margin: 25px;
     box-shadow: 0px 0px 51px 0px rgba(0, 0, 0, 0.08), 0px 6px 18px 0px rgba(0, 0, 0, 0.05);
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.35s cubic-bezier(0.4, 0, 0.2, 1);
@@ -129,7 +143,6 @@ p {
 }
 
 .ch-gradient {
-    border-radius: 12px 12px 0px 0px;
     width: 100%;
     height: 180px;
     position: relative;
@@ -193,7 +206,6 @@ p {
 }
 
 .ch-colors {
-    border-radius: 0px 0px 12px 12px;
     padding: 12px;
     text-align: left;
     text-transform: uppercase;
@@ -399,16 +411,17 @@ noscript {
     }
 }
 
-@media screen and (max-width:480px) {
-    .ch-share-brick {
-        margin: 0;
-    }
+@media screen and (max-width:600px) {
     .ch-share-brick:hover {
         box-shadow: none;
     }
-    .ch-share-text,
-    .ch-starcount {
-        display: none;
+    .ch-topbar {
+        padding: 0px 0 10px 0;
+    }
+    .ch-topbar .grid-lt, .ch-topbar .grid-rt{
+        width: 100%;
+        display: block;
+        text-align: center
     }
 }
 
@@ -527,7 +540,7 @@ noscript {
    .wk-wrapper{
        width: 100%;
        height: 100%;
-       padding: 20px 0;
+       padding: 20px 10px;
        margin: 0;
        text-align: center;
    }
@@ -597,5 +610,29 @@ noscript {
     to {
         transform: translateY(0px);
         opacity: 1;
+    }
+}
+
+.hiring-flag {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.hiring-flag a {
+    font: 16px 'Source Sans Pro', sans-serif;
+    background: linear-gradient( 135deg, #1c00ff 10%, #00a30d 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    margin: 0 5px;
+}
+
+.hiring-flag a:hover {
+    border-bottom: solid 1px #730be9;
+}
+
+@media screen and (max-width:600px) {
+    .ch-share-brick:nth-of-type(3) {
+        display: none;
     }
 }
