@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <title>Gradient Colors Collection Palette - CoolHue 2.0</title>
     <script src="scripts/script.js" type="text/javascript"></script>
@@ -49,15 +48,20 @@
             <h1>CoolHue 2.0</h1>
         </div>
         <div class="grid-rt">
-            <div class="hiring-flag">
-                <a href="https://webkul.github.io/coolhue/sketch-plugin" target="_blank" rel="noopener">Sketch App Plugin</a>
-            </div>
-            <!-- Hiring Flag  -->
-
             <a class="ch-share-brick" href="https://github.com/webkul/coolhue" target="_blank" rel="noopener">
                 <span class="ch-share github"></span>
                 <span class="ch-starcount"></span>
             </a>
+            <div class="inline-flag">
+                <a href="https://webkul.github.io/coolhue/figma-plugin" target="_blank" rel="noopener">
+                    <img src="images/coolhue-figma-plugin.png" srcset="images/coolhue-figma-plugin.png 1x, images/coolhue-figma-plugin-2x.png 2x,
+                    images/coolhue-figma-plugin-3x.png 3x" alt="Figma Gradient Palette Plugin">
+                </a>
+                <a href="https://webkul.github.io/coolhue/sketch-plugin" target="_blank" rel="noopener">
+                    <img src="images/coolhue-sketch-plugin.png" srcset="images/coolhue-sketch-plugin.png 1x, images/coolhue-sketch-plugin-2x.png 2x,
+                    images/coolhue-sketch-plugin-3x.png 3x" alt="Sketch Gradient Palette Plugin">
+                </a>
+            </div>
         </div>
     </div>
     <!-- /Topbar -->
@@ -71,7 +75,7 @@
     <!-- Footer -->
     <div>
         <p class="ch-footer">&copy; Copyright
-            <a href="https://webkul.com" target="_blank" rel="noopener">Webkul Software</a>, All rights reserved.</p>
+            <a href="https://webkul.design" target="_blank" rel="noopener">Webkul.Design</a>, All rights reserved.</p>
     </div>
     <!-- //Footer -->
 
@@ -94,17 +98,22 @@
             <div class="wk-content">
                 <div class="wk-titling"><img width="128" src="images/coolhue-logo.png" alt="coolhue-logo"></div>
                 <div class="wk-titling">
-                    <h1>Coolhue 2.0</h1>
-                    <p><span>Sketch</span> Plugin is out now.</p>
+                    <h2>Download Coolhue Gradient Palette Plugin</h2>
                 </div>
-                <h3>Coolest handpicked Gradient Palette and Swatch for your next super amazing stuff.</h3>
-                <a href="sketch-plugin" target="_blank" class="wk-cta dg-map"><img width="30" src="images/sketch-logo.png"
-                        alt="sketch-logo">
-                    <p>Download Plugin Now</p>
-                </a>
+                <p>Now you can directly access gradient colors palette from right inside your favorite prototyping tools like Sketch App and Figma.</p>
+                <div class="inline-flag">
+                    <a class="dg-view" href="https://webkul.github.io/coolhue/figma-plugin" target="_blank" rel="noopener">
+                        <img src="images/coolhue-figma-plugin-lg.png" srcset="images/coolhue-figma-plugin-lg.png 1x, images/coolhue-figma-plugin-lg-2x.png 2x,
+                        images/coolhue-figma-plugin-lg-3x.png 3x" alt="Figma Gradient Palette Plugin">
+                    </a>
+                    <a class="dg-view" href="https://webkul.github.io/coolhue/sketch-plugin" target="_blank" rel="noopener">
+                        <img src="images/coolhue-sketch-plugin-lg.png" srcset="images/coolhue-sketch-plugin-lg.png 1x, images/coolhue-sketch-plugin-lg-2x.png 2x,
+                        images/coolhue-sketch-plugin-lg-3x.png 3x" alt="Sketch Gradient Palette Plugin">
+                    </a>
+                </div>
             </div>
             <div class="wk-preview">
-                <img src="images/swatch.png" alt="CoolHue Gradient Sketch App Plugin ">
+                <img src="images/coolhue-gradient-plugin.png" alt="CoolHue Gradient Colors Palette Figma and Sketch App Plugin">
             </div>
         </div>
     </div>
@@ -112,7 +121,7 @@
         var vBody = document.body;
         var vfadeOverlay = document.querySelector(".fade-overlay");
         var vDialog = document.querySelector(".dialog");
-        var vClose = document.querySelector(".dg-map");
+        var vView = document.querySelectorAll(".dg-view");
         var vCross = document.querySelector(".dg-close");
         var dialogPreview = localStorage.getItem("dialog");
 
@@ -133,17 +142,19 @@
                 vBody.classList.add("overflow-blocked");
                 vfadeOverlay.classList.add("fade-overlay-show");
                 vCross.addEventListener("click", hideDialog);
-                vClose.addEventListener("click", function () {
+                vView.forEach(function(item){
+                    item.addEventListener("click", function () {
                     hideDialog();
                     if (typeof (Storage) !== "undefined") {
-                        localStorage.setItem("dialog", "hidden");
+                        localStorage.setItem("dialog", "hide");
                     }
+                });
                 });
             }
         };
 
         if (typeof (Storage) !== "undefined") {
-            if (dialogPreview == undefined || dialogPreview == null || dialogPreview !== "hidden") {
+            if (dialogPreview == undefined || dialogPreview == null || dialogPreview !== "hide") {
                 setTimeout(showDialog, 5000);
             }
         }

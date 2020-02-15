@@ -2,22 +2,22 @@
 <html>
 
 <head>
-    <title>Sketch Gradient Colors Collection Palette Plugin - CoolHue 2.0</title>
+    <title>Figma Gradient Colors Collection Palette Plugin - CoolHue 2.0</title>
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
     <link href="https://webkul.github.io/coolhue/images/coolhue-logo.png" rel="shortcut icon" type="image/png">
-    <link rel="canonical" href="https://webkul.github.io/coolhue/sketch-plugin">
+    <link rel="canonical" href="https://webkul.github.io/coolhue/figma-plugin">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=yes">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Sketch Gradient Colors Collection Palette Plugin - CoolHue 2.0">
-    <meta name="twitter:description" content="Get free sketch gradient colors plugin and gradient collection palette.">
-    <meta name="twitter:image:src" content="https://webkul.github.io/coolhue/images/coolhue-sketch-plugin-cover.png">
+    <meta name="twitter:title" content="Gradient Palette Plugin for Figma - CoolHue 2.0">
+    <meta name="twitter:description" content="Download Figma Gradient Plugin to speed-up your design process.">
+    <meta name="twitter:image:src" content="https://webkul.github.io/coolhue/images/coolhue-figma-plugin-cover.png">
     <meta name="twitter:creator" content="@webkul">
-    <meta name="twitter:url" content="https://webkul.github.io/coolhue/sketch-plugin">
-    <meta property="og:title" content="Sketch Gradient Colors Collection Palette Plugin - CoolHue 2.0">
-    <meta property="og:description" content="Get free sketch gradient colors plugin and gradient collection palette.">
-    <meta property="og:url" content="https://webkul.github.io/coolhue/sketch-plugin">
-    <meta property="og:image" content="https://webkul.github.io/coolhue/images/coolhue-sketch-plugin-cover.png">
-    <meta name="description" content="Get free sketch gradient colors plugin and gradient collection palette.">
+    <meta name="twitter:url" content="https://webkul.github.io/coolhue/figma-plugin">
+    <meta property="og:title" content="Gradient Palette Plugin for Figma - CoolHue 2.0">
+    <meta property="og:description" content="Download Figma Gradient Plugin to speed-up your design process.">
+    <meta property="og:url" content="https://webkul.github.io/coolhue/figma-plugin">
+    <meta property="og:image" content="https://webkul.github.io/coolhue/images/coolhue-figma-plugin-cover.png">
+    <meta name="description" content="Get free Figma gradient colors plugin and gradient collection palette to speed-up your design process.">
     <meta charset="UTF-8">
     <script>
         (function (i, s, o, g, r, a, m) {
@@ -50,7 +50,7 @@
             -moz-osx-font-smoothing: grayscale;
             font-family: 'Source Sans Pro', sans-serif;
             margin: 0;
-            background-image: linear-gradient(135deg, #21024f 10%, #390ddb 100%);
+            background-image: linear-gradient(135deg, rgb(107, 115, 255) 10%, rgb(0, 13, 255) 100%);
             color: #FFFFFF;
         }
 
@@ -86,17 +86,24 @@
             padding: 0;
         }
 
+        .grd-lt .title .heading h1:after {
+            content: "Free";
+            font-size: 18px;
+            padding: 1px 15px 2px 15px;
+            border-radius: 3px;
+            background: rgba(0,0,0,.86);
+            color: #ffffff;
+            pointer-events: none;
+            text-transform: uppercase;
+            vertical-align: middle;
+            display: inline-block;
+            margin-left: 16px;
+        }
+
         .grd-lt .title .heading p {
             margin: 5px 0 0 0;
             padding: 0;
             font-size: 18px;
-        }
-
-        .grd-lt .title .heading p span {
-            padding: 1px 5px 2px 5px;
-            border-radius: 3px;
-            background: #fbac29;
-            color: #2e2e2e;
         }
 
         .cta p {
@@ -130,13 +137,14 @@
             top: 6px;
         }
 
-        .cta .btn-main.sketch {
-            background-image: linear-gradient(135deg, #ffd515 15%, #ff6928 60%);
+        .cta .btn-main.figma {
+            background-image: linear-gradient(135deg, #000000 15%, #000000 60%);
         }
 
-        .cta .btn-main.sketch:before {
+        .cta .btn-main.figma:before {
+            left: 16px;
             top: 7px;
-            background-image: url("../images/sketch-logo.png");
+            background-image: url("../images/figma-logo.png");
         }
 
         .cta .btn-main.github {
@@ -235,8 +243,8 @@
             position: absolute;
             left: 0;
             right: 0;
-            top: 0;
-            bottom: 40px;
+            top: 40px;
+            bottom: 0;
             padding: 10px;
             text-align: center;
             overflow: auto;
@@ -244,21 +252,24 @@
 
         .controller {
             z-index: 5;
-            border-top: solid 1px #D7DDE4;
+            border-bottom: solid 1px #D7DDE4;
             position: absolute;
             height: 40px;
             left: 0;
             right: 0;
-            bottom: 0;
+            top: 0;
         }
 
         .brick {
-            width: 32px;
-            height: 32px;
+            width: 36px;
+            height: 36px;
             display: inline-block;
-            margin: 4px;
-            border-radius: 3px;
-            box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1), 0px 1px 5px 0px rgba(0, 0, 0, 0.05);
+            margin: 2px;
+            border: solid 2px #FFFFFF;
+        }
+
+        .brick:hover {
+            box-shadow: 0px 0px 1px 1px #D7DDE4;
         }
 
         .brick:active {
@@ -266,6 +277,7 @@
         }
 
         .grd-cast {
+            background-color: #FFFFFF;
             display: block;
             padding: 10px;
             font-size: 0;
@@ -291,7 +303,7 @@
             margin: 0;
             padding: 0;
             font-size: 14px;
-            color: #8e92a1;
+            color: #333333;
             font-weight: normal;
             cursor: default;
         }
@@ -356,20 +368,15 @@
             <div class="title">
                 <a href="https://webkul.github.io/coolhue"><img width="128" src="../images/coolhue-logo.png" alt="CoolHue Gradient Palette and Swatch Sketch Plugin"></a>
                 <div class="heading">
-                    <h1>Sketch Gradient Colors Plugin - CoolHue</h1>
-                    <p><span>v2.0.7</span></p>
+                    <h1>Figma Gradient Colors Plugin - CoolHue</h1>
                 </div>
             </div>
             <div class="cta">
                 <p>Coolest handpicked Gradient Palette and Swatch for your next super amazing stuff.</p>
                 <div class="cta-buttons">
-                    <a class="btn-main sketch" href="https://github.com/webkul/coolhue/releases">Download Plugin</a>
+                    <a class="btn-main figma" href="https://bit.ly/coolhue-figma">Download Plugin</a>
                     <a class="btn-main github" href="http://bit.ly/coolhue-dev">Star on GitHub</a>
                 </div>
-                <div class="dwnld-wrapper">
-
-                </div>
-                <p class="version">>_ Supported Sketch App Versions >= 51</p>
             </div>
         </div>
         <div class="grd-rt">
@@ -382,10 +389,7 @@
                 <div class="controller">
                     <div class="grd-cast">
                         <div class="grd-cast-lt">
-                            <h2 class="cl-title">CoolHue v2.0.7</h2>
-                        </div>
-                        <div class="grd-cast-rt">
-                            <span class="cl-theme"></span>
+                            <h2 class="cl-title">CoolHue - Gradient Palette</h2>
                         </div>
                     </div>
                 </div>
@@ -394,32 +398,5 @@
         </div>
     </div>
     <script src="widget.js" type="text/javascript"></script>
-    <script>
-        var dwnldReq = new XMLHttpRequest();
-        dwnldReq.open("GET", "https://api.github.com/repos/webkul/coolhue/releases", true);
-        dwnldReq.send();
-        var dwnldPromise = new Promise(function (resolve, reject) {
-            dwnldReq.onreadystatechange = function () {
-                if (this.readyState == 4 && this.status == 200) {
-                    resolve(this.responseText);
-                }
-            }
-        });
-        dwnldPromise.then(function (dwnldData) {
-            apiObj = JSON.parse(dwnldData);
-            var countNumber = 0;
-            for(var i in apiObj){
-                if(apiObj[i].assets[0]){
-                countNumber += apiObj[i].assets[0].download_count;
-                }
-            }
-            var dwnldWrapper = document.querySelector(".dwnld-wrapper");
-            var dwnldCount = document.createElement("div");
-            dwnldCount.classList.add("dwnld");
-            dwnldCount.textContent = countNumber + " Downloads";
-            dwnldWrapper.appendChild(dwnldCount);
-        });
-    </script>
 </body>
-
 </html>
